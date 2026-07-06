@@ -4,7 +4,7 @@
 -->
 
 <template>
-	<NcSelectTags v-model="integerValue" :multiple="false" @update:model-value="emitInput" />
+	<NcSelectTags v-model="integerValue" :multiple="false" @update:modelValue="emitInput" />
 </template>
 
 <script>
@@ -19,6 +19,7 @@ export default {
 			default: '',
 		},
 	},
+
 	emits: ['update:modelValue'],
 	computed: {
 		integerValue() {
@@ -26,6 +27,7 @@ export default {
 			return isNaN(val) ? -1 : val
 		},
 	},
+
 	methods: {
 		emitInput(value) {
 			this.$emit('update:modelValue', '' + value)
