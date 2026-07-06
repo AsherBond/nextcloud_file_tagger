@@ -11,6 +11,8 @@
 import NcSelectTags from '@nextcloud/vue/components/NcSelectTags'
 
 export default {
+	// TODO: Rename Tag component to multi-word
+	// eslint-disable-next-line vue/multi-word-component-names
 	name: 'Tag',
 	components: { NcSelectTags },
 	props: {
