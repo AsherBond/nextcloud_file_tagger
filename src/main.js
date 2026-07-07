@@ -4,7 +4,6 @@
  */
 
 import { defineCustomElement } from 'vue'
-
 import Tag from './Tag.vue'
 
 const AutoTaggerComponent = defineCustomElement(Tag, { shadowRoot: false })
